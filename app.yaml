@@ -1,0 +1,35 @@
+application: yourbets-4532f
+runtime: python27
+version: 1
+api_version: 1
+threadsafe: true
+
+# [START handlers]
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /img
+  static_dir: img
+
+- url: /font-awesome
+  static_dir: font-awesome
+
+
+- url: /.*
+  script: index.app
+# [END handlers]
+
+# [START libraries]
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
+# [END libraries]
