@@ -1102,7 +1102,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #ed9e91;
   text-decoration: underline;
 }
 a:focus {
@@ -1373,7 +1373,7 @@ a.text-danger:focus {
 }
 .bg-primary {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #CF3A22;
 }
 a.bg-primary:hover,
 a.bg-primary:focus {
