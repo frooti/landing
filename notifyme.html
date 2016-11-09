@@ -62,7 +62,7 @@
         <h3>We will be launching in next 7 days.</h3>
       </center>
       <center style="margin-top:2%;">
-        <form class="form-inline">
+        <form class="form-inline" id="notifymeform">
           <input type="text" id="email-input" class="form-control" id="email" placeholder="Enter Your Email" style="min-width:240px;">
           <button type="submit" id="submit-button" class="btn btn-primary" style="min-width:100px;"><span>NOTIFY ME</span></button>
         </form>
@@ -73,8 +73,15 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $("#notifymeform").submit(function(event){
+        event.preventDefault();
+        $.ajax{
+
+        }
+    });
+    </script>
 </body>
 </html>
