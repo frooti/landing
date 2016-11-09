@@ -56,6 +56,12 @@ class LaunchPage(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('index.html')
         self.response.write(template.render({}))
 
+
+class NotifyMe(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('notifyme.html')
+        self.response.write(template.render({}))
+
 """class DemoRegistration(webapp2.RequestHandler):
 
     def get(self):
@@ -86,5 +92,6 @@ class LaunchPage(webapp2.RequestHandler):
 # [START app]
 app = webapp2.WSGIApplication([
     ('/', LaunchPage),
+    ('/notify',NotifyMe),
 ], debug=True)
 # [END app]
